@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assesment 1: Interactive Adventure Game - Mark Katigbak</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+      <figure class="map">
+        <figcaption class="map-title">Map of Scriptoria</figcaption>
+        <img src="images/scriptoriamap.jpg" alt="The map of scriptoria." class="map-image">
+      </figure>
+      
+      <div id="game-text">
+        Welcome to Scriptoria!<br /><br />Choose your hero below.
+      </div>
+
+      <div id="button-options" class="button-grid">
+        <button class="option" id="option-1">
+          <strong>WARRIOR</strong><br /><br />Health Points: 120<br />Attack
+          Power: 30
+        </button>
+        
+        <button class="option" id="option-2">
+          <strong>WIZARD</strong><br /><br />Health Points: 100<br />Attack
+          Power: 50
+        </button>
+      </div>
+
+      <div class="info-container">
+        <div class="information">Class: <span id="hero-type">None</span></div>
+        <div class="information">Health: <span id="health">0</span></div>
+        <div class="information">Location: <span id="location">Home</span></div>
+      </div>
+
+      <div class="inventory-container">
+        <div class="information" id="inventory">Inventory: Empty</div>
+      </div>
+    </div>
+    
+    <script type="text/JavaScript" src="javascript/scripts.js"></script>
+</body>
+</html>
